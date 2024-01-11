@@ -35,7 +35,7 @@ sts="${Info2}"
 else
 sts="${Error}"
 fi
-
+clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[1;97;101m  Update Script Joys Tunneling     \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -53,7 +53,6 @@ echo -e ""
 
 
 
-clear
 echo ""                                                          
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "   \e[$back_text                 \e[30m[\e[$box CHECK NEW UPDATE\e[30m ]                   \e[m"
