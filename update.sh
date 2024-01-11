@@ -118,7 +118,7 @@ wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/rizaddin/xraylit
 wget -q -O /etc/issue.net "https://raw.githubusercontent.com/rizaddin/xraylite/main/issue.net"
 wget -q -O /root/versi "https://raw.githubusercontent.com/rizaddin/xraylite/main/versibasic"
 wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/rizaddin/xraylite/main/update.sh"
-wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/rizaddin/xraylite/main/backup.sh"
+wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/rizaddin/xraylite/main/backup/backup.sh"
 wget -q -O /usr/bin/renel "https://raw.githubusercontent.com/rizaddin/xraylite/main/renel.sh"
 wget -q -O /usr/bin/utility "https://raw.githubusercontent.com/rizaddin/xraylite/main/utility.sh"
 wget -q -O /usr/bin/cekl "https://raw.githubusercontent.com/rizaddin/xraylite/main/cekl.sh"
