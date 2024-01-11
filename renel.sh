@@ -53,7 +53,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1───────────────────────────────────────────────────${NC}"
 read -rp "   Input Username : " user
 if [ -z $user ]; then
-menul
+menu-vless
 else
 read -p "   Expired (days): " masaaktif
 if [ -z $masaaktif ]; then
