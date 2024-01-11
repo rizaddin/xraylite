@@ -35,17 +35,26 @@ sts="${Info2}"
 else
 sts="${Error}"
 fi
+
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e " \e[1;97;101m  Update Script Joys Tunneling     \e[0m"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+echo -e "    $below VERSION NOW >> $Info1"
+echo -e "    $below STATUS UPDATE >> $sts"
+echo -e "       \e[1;31mWould you like to proceed?\e[0m"
+echo -e "     $number [1]$below Update Script Now"
+echo -e "     $number [x]$below Back To Menu"
+
+echo -e "  \033[1;91m update script service\033[1;37m"
+fun_bar 'res1'
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+
+
+
 clear
-echo ""
-                                                           
-echo -e "$green▀████▀ ▀███▀▀████▀   ▀████▄     ▄███▀███▀▀▀██▄▀████▀ ▀███▀ $NC"
-echo -e "$green  ██   ▄█▀    ██       ████    ████   ██   ▀██▄ ██   ▄█▀   $NC"
-echo -e "$green  ██ ▄█▀      ██       █ ██   ▄█ ██   ██   ▄██  ██ ▄█▀     $NC"
-echo -e "$green  █████▄      ██       █  ██  █▀ ██   ███████   █████▄     $NC"
-echo -e "$green  ██  ███     ██     ▄ █  ██▄█▀  ██   ██        ██  ███    $NC"
-echo -e "$green  ██   ▀██▄   ██    ▄█ █  ▀██▀   ██   ██        ██   ▀██▄  $NC"
-echo -e "$green▄████▄   ███▄████████████▄ ▀▀  ▄████▄████▄    ▄████▄   ███▄$NC"
-                                                           
+echo ""                                                          
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "   \e[$back_text                 \e[30m[\e[$box CHECK NEW UPDATE\e[30m ]                   \e[m"
 echo -e "   \e[$line--------------------------------------------------------\e[m"
