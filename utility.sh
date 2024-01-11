@@ -83,6 +83,6 @@ case $menu in
    menu
    ;;
 *) clear ;
-    menu
+    utility
     ;;
 esac
