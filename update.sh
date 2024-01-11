@@ -39,35 +39,13 @@ clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[1;97;101m  Update Script Joys Tunneling     \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
 echo -e "    $below VERSION NOW >> $Info1"
 echo -e "    $below STATUS UPDATE >> $sts"
 echo -e "       \e[1;31mWould you like to proceed?\e[0m"
 echo -e "     $number [1]$below Update Script Now"
 echo -e "     $number [x]$below Back To Menu"
-
-echo -e "  \033[1;91m update script service\033[1;37m"
-fun_bar 'res1'
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-
-
-
-echo ""                                                          
-echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "   \e[$back_text                 \e[30m[\e[$box CHECK NEW UPDATE\e[30m ]                   \e[m"
-echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "   \e[$below VVERSION NOW >> $Info1"
-echo -e "   \e[$below SSTATUS UPDATE >> $sts"
-echo -e ""
-echo -e "       \e[1;31mWould you like to proceed?\e[0m"
-echo ""
-echo -e "            \e[0;32m[ Select Option ]\033[0m"
-echo -e "     \e[$number [1]\e[m \e[$below CCheck Script Update Now\e[m"
-echo -e "     \e[$number [x]\e[m \e[$below BBack To Menu\e[m"
-echo -e ""
-echo -e "   \e[$line--------------------------------------------------------\e[m"
-echo -e "\e[$line"
 read -p "PPlease Choose 1 or x : " option2
 case $option2 in
 1)
