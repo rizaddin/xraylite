@@ -17,7 +17,7 @@ echo -e " \033[34m════════════════════�
 #echo -e " \033[34m══════════════════════════════════════════════════════════${NC}"
 echo -e "  ${Blue}[01] ${NC}${GREEN}CEK SERVICE${NC}        ${Blue}[11] ${NC}${GREEN}CEK TRAFIK ${NC}"     
 echo -e "  ${Blue}[02] ${NC}${GREEN}INSTALL UDP ${NC}       ${Blue}[12] ${NC}${GREEN}CEK BANDWIDTH ${NC}"
-echo -e "  ${Blue}[03] ${NC}${GREEN}UPDATE SC SC ${NC}      ${Blue}[13] ${NC}${GREEN}LIMIT SPEED ${NC}"
+echo -e "  ${Blue}[03] ${NC}${GREEN}UPDATE SC ${NC}         ${Blue}[13] ${NC}${GREEN}LIMIT SPEED ${NC}"
 echo -e "  ${Blue}[04] ${NC}${GREEN}RESTART SERVICE${NC}    ${Blue}[14] ${NC}${GREEN}INSTALL WEBMIN ${NC}"
 echo -e "  ${Blue}[05] ${NC}${GREEN}CHANGE BANNER${NC}      ${Blue}[15] ${NC}${GREEN}AUTO REBOOT ${NC}"
 echo -e "  ${Blue}[06] ${NC}${GREEN}CHANGE DOMAIN${NC}      ${Blue}[16] ${NC}${GREEN}SCRIPT INFO ${NC}"
