@@ -125,7 +125,7 @@ wget -q -O /usr/bin/cekl "https://raw.githubusercontent.com/rizaddin/xraylite/ma
 wget -q -O /usr/bin/dell "https://raw.githubusercontent.com/rizaddin/xraylite/main/dell.sh"
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-vless.sh"
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/rizaddin/xraylite/main/update.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-bot-notif"
+wget -q -O /usr/bin/add-bot-notif "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-bot-notif"
 wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Andyyuda/xolpanel/main/cupu.sh"
 chmod +x /usr/bin/menu-backup
 chmod +x /usr/bin/cekl
