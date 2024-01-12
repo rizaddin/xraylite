@@ -12,16 +12,6 @@ echo ""
 version=$(cat /home/ver)
 ver=$( curl https://raw.githubusercontent.com/${GitUser}/xraylite/main/version )
 clear
-# LINE COLOUR
-line=$(cat /etc/line)
-# TEXT COLOUR BELOW
-below=$(cat /etc/below)
-# BACKGROUND TEXT COLOUR
-back_text=$(cat /etc/back)
-# NUMBER COLOUR
-number=$(cat /etc/number)
-# TEXT ON BOX COLOUR
-box=$(cat /etc/box)
 # CEK UPDATE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info1="${Green_font_prefix}($version)${Font_color_suffix}"
@@ -39,11 +29,11 @@ clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[1;97;101m     Update Script Joys Tunneling       \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " $below VERSION NOW >> $Info1"
-echo -e " $below STATUS UPDATE >> $sts"
+echo -e "  VERSION NOW >> $Info1"
+echo -e "  STATUS UPDATE >> $sts"
 echo -e "  \e[1;31mWould you like to proceed?\e[0m"
-echo -e " $number [1]$below Update Script Now"
-echo -e " $number [x]$below Back To Menu"
+echo -e "  [1] Update Script Now"
+echo -e "  [x] Back To Menu"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p "Please Choose 1 or x : " option2
