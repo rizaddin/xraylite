@@ -55,6 +55,12 @@ green='\e[1;32m'
 NC='\e[0m'
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+# Getting
+CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
+KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
+export TIME="10"
+export URL="https://api.telegram.org/bot$KEY/sendMessage"
+clear
 
 
 
@@ -210,6 +216,47 @@ exp3=$(($exp2 + $masaaktif))
 exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
 sed -i "/#! $user/c\#! $user $exp4" /etc/xray/config.json
 systemctl restart xray > /dev/null 2>&1
+clear
+CHATID="$CHATID"
+KEY="$KEY"
+TIME="$TIME"
+URL="$URL"
+TEXT="<code>---------------------------------------------------</code>
+<code>      XRAY/TROJAN</code>
+<code>---------------------------------------------------</code>
+<code>Remarks   : ${user}
+Domain      : ${domain}
+Limit Quota : ${Quota} GB
+Limit IP    : ${iplimit} IP
+Host Slowdns: ${NS}
+Pub Key     : ${PUB}
+Port TLS    : 443
+Port NTLS   : 80,8880,8080
+id          : ${uuid}
+network     : ws or grpc
+Path        : /trojan-ws
+ServiceName : trojan-grpc
+<code>---------------------------------------------------</code>
+<code> Trojan WS TLS</code>
+<code>---------------------------------------------------</code>
+<code>${trojanlink}</code>
+<code>---------------------------------------------------</code>
+<code> Trojan NONE TLS</code>
+<code>---------------------------------------------------</code>
+<code>${trojanlink2}</code>
+<code>---------------------------------------------------</code>
+<code> TROJAN gRPC</code>
+<code>---------------------------------------------------</code>
+<code>${trojanlink1}</code>
+<code>---------------------------------------------------</code>
+Format OpenClash : https://${domain}:81/trojan-$user.txt
+<code>---------------------------------------------------</code>
+Aktif Selama   : $masaaktif Hari
+Dibuat Pada    : $tnggl
+Berakhir Pada  : $expe
+<code>---------------------------------------------------</code>
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}            • RENEW TROJAN USER •              ${NC} $COLOR1│$NC"
