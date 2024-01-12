@@ -84,5 +84,5 @@ echo -e "$COLOR1│${NC}               •  Joys Vpn  •                  $COLO
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
-menu
+menu-vless
 fi
