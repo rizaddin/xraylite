@@ -21,7 +21,7 @@ echo -e "  ${Blue}[03] ${NC}${GREEN}UPDATE SC SC ${NC}      ${Blue}[13] ${NC}${G
 echo -e "  ${Blue}[04] ${NC}${GREEN}RESTART SERVICE${NC}    ${Blue}[14] ${NC}${GREEN}INSTALL WEBMIN ${NC}"
 echo -e "  ${Blue}[05] ${NC}${GREEN}CHANGE BANNER${NC}      ${Blue}[15] ${NC}${GREEN}AUTO REBOOT ${NC}"
 echo -e "  ${Blue}[06] ${NC}${GREEN}CHANGE DOMAIN${NC}      ${Blue}[16] ${NC}${GREEN}SCRIPT INFO ${NC}"
-echo -e "  ${Blue}[07] ${NC}${GREEN}FIX POINTING${NC}       ${Blue}[16] ${NC}${GREEN}ADD BOT NOTIF ${NC}"
+echo -e "  ${Blue}[07] ${NC}${GREEN}FIX POINTING${NC}       ${Blue}[17] ${NC}${GREEN}ADD BOT NOTIF ${NC}"
 echo -e "  ${Blue}[08] ${NC}${GREEN}CLEAR LOGS${NC}"
 echo -e "  ${Blue}[09] ${NC}${GREEN}REBOOT VPS${NC}"
 echo -e "  ${Blue}[10] ${NC}${GREEN}GEN-SSL / CERTV${NC}"
@@ -78,6 +78,9 @@ case $menu in
    ;;
 16) clear ;
    cat /root/log-install.txt
+   ;;  
+17) clear ;
+   add-bot-notif
    ;;  
 0) clear ;
    menu
