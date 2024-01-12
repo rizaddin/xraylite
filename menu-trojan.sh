@@ -226,34 +226,24 @@ TEXT="<code>---------------------------------------------------</code>
 <code>---------------------------------------------------</code>
 <code>Remarks   : ${user}
 Domain      : ${domain}
-Limit Quota : ${Quota} GB
-Limit IP    : ${iplimit} IP
-Host Slowdns: ${NS}
-Pub Key     : ${PUB}
+Limit Quota : ${quota} GB
+Limit IP    : ${limit} IP
 Port TLS    : 443
-Port NTLS   : 80,8880,8080
 id          : ${uuid}
 network     : ws or grpc
 Path        : /trojan-ws
+Path WSS    : wss://bug.com/trojan-ws
 ServiceName : trojan-grpc
 <code>---------------------------------------------------</code>
 <code> Trojan WS TLS</code>
 <code>---------------------------------------------------</code>
 <code>${trojanlink}</code>
 <code>---------------------------------------------------</code>
-<code> Trojan NONE TLS</code>
-<code>---------------------------------------------------</code>
-<code>${trojanlink2}</code>
-<code>---------------------------------------------------</code>
 <code> TROJAN gRPC</code>
 <code>---------------------------------------------------</code>
 <code>${trojanlink1}</code>
 <code>---------------------------------------------------</code>
-Format OpenClash : https://${domain}:81/trojan-$user.txt
-<code>---------------------------------------------------</code>
-Aktif Selama   : $masaaktif Hari
-Dibuat Pada    : $tnggl
-Berakhir Pada  : $expe
+Expired On   : $exp
 <code>---------------------------------------------------</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
