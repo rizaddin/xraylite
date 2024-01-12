@@ -381,7 +381,7 @@ TEXT="<code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Remarks   : ${user}
 Domain    : ${domain}
-Limit Quota : ${quota} GB
+Quota	  : ${quota} GB
 Port TLS  : 443
 Port NTLS : 80
 id        : ${uuid}
@@ -389,7 +389,7 @@ alterId   : 0
 Security  : auto
 network   : ws or grpc
 Path      : /vmess
-Path      : /Multi-Path
+Path      : /multipath
 Path WSS  : wss://bugmu.com/path
 Name      : vmess-grpc</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
