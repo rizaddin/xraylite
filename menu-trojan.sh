@@ -221,11 +221,11 @@ if [ -z ${quota} ]; then
   Quota="0"
 fi
 
-c=$(echo "${quota}" | sed 's/[^0-9]*//g')
-d=$((${c} * 1024 * 1024 * 1024))
+c=$(echo "${quota}" | sed 's/[^0-9]*//g');
+d=$(( ${c} * 1024*1024*1024 ));
 
 if [[ ${c} != "0" ]]; then
-  echo "${d}" >/etc/trojan/${user}
+echo "${d}" > /etc/trojan/${user}
 fi
 DATADB=$(cat /etc/trojan/.trojan.db | grep "^#!" | grep -w "${user}" | awk '{print $2}')
 if [[ "${DATADB}" != '' ]]; then
