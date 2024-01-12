@@ -381,7 +381,7 @@ TEXT="<code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Remarks   : ${user}
 Domain    : ${domain}
-Limit Quota : ${Quota} GB
+Limit Quota : ${quota} GB
 Port TLS  : 443
 Port NTLS : 80
 id        : ${uuid}
