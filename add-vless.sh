@@ -38,9 +38,9 @@ echo -e "$COLOR1│${NC} ${COLBG1}            • CREATE VLESS USER •         
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 
-  read -rp "User: " -e user
-  read -rp "Quota: " -e quota
-  read -rp "Limit IP: " -e limit
+  read -rp "    Input Username: " -e user
+  read -rp "    Input Quota: " -e quota
+  read -rp "    Input Limit IP: " -e limit
   CLIENT_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 
   if [[ ${CLIENT_EXISTS} == '1' ]]; then
