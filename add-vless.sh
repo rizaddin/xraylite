@@ -153,33 +153,39 @@ if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/vless/.vless.db
 fi
 echo "#& ${user} ${exp} ${uuid} " >>/etc/vless/.vless.db
+
 clear
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "\E[0;41;36m    Xray/Vless Account     \E[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "Remarks     : ${user}" | tee -a /root/akun/vless/$user.txt
-echo -e "Domain      : ${domain}" | tee -a /root/akun/vless/$user.txt
-echo -e "Quota       : ${quota} GB" 
-echo -e "Limit iP    : ${limit} User" 
-echo -e "port TLS    : 443" | tee -a /root/akun/vless/$user.txt
-echo -e "Port DNS    : 443" | tee -a /root/akun/vless/$user.txt
-echo -e "Port NTLS   : 80" | tee -a /root/akun/vless/$user.txt
-echo -e "User ID     : ${uuid}" | tee -a /root/akun/vless/$user.txt
-echo -e "Encryption  : none" | tee -a /root/akun/vless/$user.txt
-echo -e "Path TLS    : /vless " | tee -a /root/akun/vless/$user.txt
-echo -e "ServiceName : vless-grpc" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "Link TLS    : ${vlesslink1}" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "Link NTLS   : ${vlesslink2}" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "Link GRPC   : ${vlesslink3}" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "Format OpenClash : https://${domain}:81/vless-$user.txt" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "Expired On : $exp" | tee -a /root/akun/vless/$user.txt
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /root/akun/vless/$user.txt
-echo -e "" | tee -a /root/akun/vless/$user.txt
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC} ${COLBG1}            • CREATE VLESS USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1 ${NC} Remarks       : ${user}"
+echo -e "$COLOR1 ${NC} Expired On    : $exp" 
+echo -e "$COLOR1 ${NC} Quota         : ${quota} GB" 
+echo -e "$COLOR1 ${NC} Limit ip      : ${limit} USER" 
+echo -e "$COLOR1 ${NC} Domain        : ${domain}" 
+echo -e "$COLOR1 ${NC} Port TLS      : 443" 
+echo -e "$COLOR1 ${NC} Port none TLS : 80" 
+echo -e "$COLOR1 ${NC} Port  GRPC    : 443" 
+echo -e "$COLOR1 ${NC} id            : ${uuid}" 
+echo -e "$COLOR1 ${NC} Encryption    : none" 
+echo -e "$COLOR1 ${NC} Path          : /vless" 
+echo -e "$COLOR1 ${NC} ServiceName   : vless-grpc" 
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1 ${NC} Link TLS : "
+echo -e "$COLOR1 ${NC} ${vlesslink1}" 
+echo -e "$COLOR1 ${NC} "
+echo -e "$COLOR1 ${NC} Link none TLS : "
+echo -e "$COLOR1 ${NC} ${vlesslink2}" 
+echo -e "$COLOR1 ${NC} "
+echo -e "$COLOR1 ${NC} Link GRPC : "
+echo -e "$COLOR1 ${NC} ${vlesslink3}"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
+echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
+echo -e "$COLOR1│${NC}                • Joys Vpn •                 $COLOR1│$NC"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
+echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 
 menu-vless
