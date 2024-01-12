@@ -11,6 +11,11 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
+# ==========================================
+CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
+KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
+export TIME="10"
+export URL="https://api.telegram.org/bot$KEY/sendMessage"
 # Getting
 clear
 IP=$(wget -qO- ipinfo.io/ip);
@@ -53,6 +58,25 @@ Tanggal       : $date
 " | mail -s "Backup Data" $email
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
+clear
+CHATID="$CHATID"
+KEY="$KEY"
+TIME="$TIME"
+URL="$URL"
+TEXT="<code>==============</code>
+<code>Detail Backup </code>
+<code>==============</code>
+<code>DOMAIN       : ${domain}</code>
+<code>==============</code>
+<code>IP VPS       : ${IP}</code>
+<code>==============</code>
+<code>Link Backup   :</code> $link
+<code>==============</code>
+<code>Tanggal : $date</code>
+<code>==============</code>
+<code>Silahkan copy Link dan restore di VPS baru</code>
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo -e "
 Detail Backup 
