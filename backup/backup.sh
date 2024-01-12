@@ -73,7 +73,7 @@ TEXT="<code>==============</code>
 <code>==============</code>
 <code>Link Backup   :</code> $link
 <code>==============</code>
-<code>Tanggal : $date</code>
+<b>Tanggal : $date</b>
 <code>==============</code>
 <code>Silahkan copy Link dan restore di VPS baru</code>
 "
