@@ -19,6 +19,7 @@ export URL="https://api.telegram.org/bot$KEY/sendMessage"
 # Getting
 clear
 IP=$(wget -qO- ipinfo.io/ip);
+domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 clear
 email=$(cat /home/email)
