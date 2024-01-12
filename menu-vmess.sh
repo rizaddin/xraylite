@@ -377,11 +377,11 @@ KEY="$KEY"
 TIME="$TIME"
 URL="$URL"
 TEXT="<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>      XRAY/VMESS</code>
+<code>          XRAY/VMESS</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Remarks   : ${user}
 Domain    : ${domain}
-Quota	  : ${quota} GB
+Quota	     : ${quota} GB
 Port TLS  : 443
 Port NTLS : 80
 id        : ${uuid}
