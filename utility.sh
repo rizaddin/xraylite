@@ -50,7 +50,7 @@ case $menu in
     addhost
     ;;
 7) clear ; 
-    fix
+    fixcert
     ;;
 8) clear ;
     clearlog
