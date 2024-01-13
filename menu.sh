@@ -189,7 +189,7 @@ echo -e "       ${BICyan}[${BIWhite}04${BICyan}]${RED} •${NC} ${YELLOW}TROJAN 
 echo -e "$COLOR1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${BICyan}┌───────────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
-echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp (${NC}${RED} $dayleft Days ${NC}${YELLOW})${NC}"
+echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp (${NC}${RED} $dayleft Days ${NC}${RED})${NC}"
 echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = JOYS VPN                   ${NC}"
 echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.0 LTS                       ${NC}"
 echo -e "${BICyan}└───────────────────────────────────────────────────────────┘${NC}"
