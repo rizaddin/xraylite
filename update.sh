@@ -115,6 +115,7 @@ wget -q -O /usr/bin/cekl "https://raw.githubusercontent.com/rizaddin/xraylite/ma
 wget -q -O /usr/bin/dell "https://raw.githubusercontent.com/rizaddin/xraylite/main/dell.sh"
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-vless.sh"
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/rizaddin/xraylite/main/update.sh"
+wget -q -O /usr/bin/fixcert "https://raw.githubusercontent.com/rizaddin/xraylite/main/fixcert"
 wget -q -O /usr/bin/installsl "https://raw.githubusercontent.com/rizaddin/xraylite/main/slowdns/installsl.sh"
 wget -q -O /usr/bin/add-bot-notif "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-bot-notif"
 wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Andyyuda/xolpanel/main/cupu.sh"
@@ -153,6 +154,7 @@ chmod +x /usr/bin/add-bot-notif
 chmod +x /usr/bin/changer
 chmod +x /usr/bin/installsl
 chmod +x /usr/bin/fix
+chmod +x /usr/bin/fixcert
 chmod +x /usr/bin/add-vless
 chmod +x /usr/bin/update
 chmod +x /usr/bin/xolpanel
