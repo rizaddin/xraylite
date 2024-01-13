@@ -15,19 +15,16 @@ Suffix="\033[0m"
 
 
 echo -e "$ungu┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$ungu│${NC} ${COLBG1}               • BACKUP MENU •                 ${NC} $COLOR1│$NC"
+echo -e "$ungu│${NC} ${COLBG1}               • BACKUP MENU •                 ${NC} $ungu│$NC"
 echo -e "$ungu└─────────────────────────────────────────────────┘${NC}"
 echo -e " $ungu┌───────────────────────────────────────────────┐${NC}"
-echo -e "${BlueCyan}Pilih Nomor: "
+echo -e "    ${BlueCyan}Pilih Nomor: "
 echo
-echo "1).Backup"
-echo "2).Restore"
-echo "3).strt"
-echo "4).limit speed"
-echo "5).autobackup"
+echo "    1).Backup"
+echo "    2).Restore"
+echo "    3).autobackup"
 echo
 echo -e " $ungu└───────────────────────────────────────────────┘${NC}"
-echo
 echo -e "${BlueCyan}"
 read -p    "Pilih Nomor └╼>>>" bro
 
