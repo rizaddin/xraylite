@@ -131,4 +131,4 @@ echo -e "${CYAN}       Script By Joys Vpn"
 echo -e "\033[1;36m**━━━━━━━━━━━━━━━━━━━━━━━━━━**\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
