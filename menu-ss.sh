@@ -473,7 +473,7 @@ menu-ss
 fi
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}           • DELETE SHADOWSOCKS USER •          ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          • DELETE SHADOWSOCKS USER •          ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 grep -E "^## " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl
