@@ -426,7 +426,7 @@ menu
 }
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                         ⇱ SSH MENU  ⇲                         \E[0m"
+echo -e "\E[44;1;39m                        ⇱ SSH MENU  ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Add Account SSH      "
@@ -440,9 +440,9 @@ echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH"
 echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Trial SSH"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                     ⇱ JOYS TUNNELING ⇲                   \E[0m"
+echo -e "\E[44;1;39m                     ⇱ JOYS TUNNELING ⇲                       \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "     ${BIYellow}Press 0 • To-${BIWhite}menu${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
@@ -458,5 +458,5 @@ case $opt in
 9) clear ; trialssh ;;
 0) clear ; menu ;;
 x) exit ;;
-*) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
+*) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menun-ssh ;;
 esac
