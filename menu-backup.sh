@@ -14,14 +14,10 @@ Red_background="\033[41;37m"
 Suffix="\033[0m"
 
 
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo -e
-echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "            t.me/dilanjaya"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
-echo
+echo -e "$ungu┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$ungu│${NC} ${COLBG1}               • BACKUP MENU •                 ${NC} $COLOR1│$NC"
+echo -e "$ungu└─────────────────────────────────────────────────┘${NC}"
+echo -e " $ungu┌───────────────────────────────────────────────┐${NC}"
 echo -e "${BlueCyan}Pilih Nomor: "
 echo
 echo "1).Backup"
@@ -30,7 +26,7 @@ echo "3).strt"
 echo "4).limit speed"
 echo "5).autobackup"
 echo
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
+echo -e " $ungu└───────────────────────────────────────────────┘${NC}"
 echo
 echo -e "${BlueCyan}"
 read -p    "Pilih Nomor └╼>>>" bro
