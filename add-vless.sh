@@ -53,7 +53,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • Joys Vpn •                   $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                • Joys Vpn •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
     read -n 1 -s -r -p "Press any key to back on menu"
     menu
