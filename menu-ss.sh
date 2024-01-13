@@ -490,7 +490,7 @@ sed -i "/^## $user $exp/,/^},{/d" /etc/xray/config.json
 systemctl restart xray > /dev/null 2>&1
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}           • DELETE SHADOWSOCKS USER •          ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}         • DELETE SHADOWSOCKS USER •           ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}   • Accound Delete Successfully"
