@@ -49,27 +49,8 @@ echo "Terimakasih sudah menggunakan layanan script joys vpn"
 echo
 echo "--------------------------------------------------------"
 fi
-if [ $bro = 3 ] || [ $bro = 3 ]
-then
-figlet "strt"
-strt
-echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script joys vpn"
-echo
-echo "--------------------------------------------------------"
-fi
-if [ $bro = 4 ] || [ $bro = 4 ]
-then
-limitspeed
-echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script joys vpn"
-echo
-echo "--------------------------------------------------------"
-fi
 
-if [ $bro = 5 ] || [ $bro = 5 ]
+if [ $bro = 3 ] || [ $bro = 3 ]
 then
 autobackup
 echo "--------------------------------------------------------"
