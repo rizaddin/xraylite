@@ -11,7 +11,6 @@ clear
 UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
 GREEN='\033[0;32m'
 RED='\033[0;31m'
-IPVPS=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
 data_ip="https://raw.githubusercontent.com/rizaddin/permission/main/ip"
@@ -81,9 +80,7 @@ export IP=$( curl -s https://ipinfo.io/ip/ )
 
 clear
 
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10)
 NS=$(cat /etc/xray/dns)
-CITY=$(curl -s ipinfo.io/city)
 IPVPS=$(curl -s ipv4.icanhazip.com)
 domain=$(cat /etc/xray/domain)
 Name=$(curl -sS https://raw.githubusercontent.com/rizaddin/permission/main/ip | grep $MYIP | awk '{print $2}')
@@ -154,13 +151,11 @@ let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
 
-IPVPS=$(curl -s ipinfo.io/ip )
 ISPVPS=$( curl -s ipinfo.io/org )
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
 export sem=$( curl -s https://raw.githubusercontent.com/rizaddin/xraylite/main/versions)
 #export pak=$( cat /home/.ver)
-IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "                      << INFORMASI VPS >>                    \E[0m" | lolcat
@@ -196,7 +191,7 @@ echo -e "${BICyan}┌───────────────────�
 echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp (${NC}${RED} $dayleft Days ${NC}${YELLOW})${NC}"
 echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = JOYS VPN                   ${NC}"
-echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = SUPER LTS                       ${NC}"
+echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.0 LTS                       ${NC}"
 echo -e "${BICyan}└───────────────────────────────────────────────────────────┘${NC}"
 
 echo
