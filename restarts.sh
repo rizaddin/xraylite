@@ -87,7 +87,7 @@ systemctl restart xray
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${YELLOW}          Terimakasih sudah menggunakan         "
-echo -e "            Script Premium Joys Vpn"
+echo -e "             Script Premium Joys Vpn"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu
