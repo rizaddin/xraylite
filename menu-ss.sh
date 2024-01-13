@@ -414,7 +414,7 @@ echo -e "$COLOR1│${NC}"
 echo -e "$COLOR1│${NC}  • [NOTE] Press any key to back on menu"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                    • Joys Vpn •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                  • Joys Vpn •                   $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1───────────────────────────────────────────────────${NC}"
 read -rp "   Input Username : " user
@@ -473,7 +473,7 @@ menu-ss
 fi
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}           • DELETE SHADOWSOCKS USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}           • DELETE SHADOWSOCKS USER •          ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 grep -E "^## " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl
@@ -490,7 +490,7 @@ sed -i "/^## $user $exp/,/^},{/d" /etc/xray/config.json
 systemctl restart xray > /dev/null 2>&1
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}           • DELETE SHADOWSOCKS USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}           • DELETE SHADOWSOCKS USER •          ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}   • Accound Delete Successfully"
