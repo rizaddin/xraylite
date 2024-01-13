@@ -442,7 +442,7 @@ echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Trial SSH"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ JOYS TUNNELING ⇲                       \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "     ${BIYellow}Press 0 • To-${BIWhite}menu${NC}"
+echo -e "     ${BIYellow}Press 0 • To-${BIWhite}MENU${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
