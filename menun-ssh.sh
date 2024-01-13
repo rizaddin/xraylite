@@ -85,7 +85,7 @@ else
 echo -e "Failure: User $Pengguna Not Exist."
 fi
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 function autodel(){
 clear
@@ -128,7 +128,7 @@ done
 echo " "
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 function ceklim(){
 clear
@@ -151,7 +151,7 @@ echo " ";
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo " ";
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 function cek(){
 if [ -e "/var/log/auth.log" ]; then
@@ -225,7 +225,7 @@ rm -f /tmp/login-db.txt
 rm -f /tmp/vpn-login-tcp.txt
 rm -f /tmp/vpn-login-udp.txt
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 function member(){
 clear
@@ -253,7 +253,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo "Account number: $JUMLAH user"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 function renew(){
 clear
@@ -317,7 +317,7 @@ echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 fi
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 function autokill(){
 clear
@@ -415,14 +415,14 @@ service cron reload >/dev/null 2>&1
 service cron restart >/dev/null 2>&1
 ;;
 x)
-menu
+menun-ssh
 ;;
 *)
 echo "Please enter an correct number"
 ;;
 esac
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menun-ssh
 }
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
