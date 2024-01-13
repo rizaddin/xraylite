@@ -48,7 +48,7 @@ echo -e "$COLOR1 ${NC}"
 echo -e "$COLOR1 ${NC}  • [NOTE] Press any key to back on menu"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 •  Joys Vpn •                  $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 •  Joys Vpn •                   $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1───────────────────────────────────────────────────${NC}"
 read -rp "   Input Username : " user
