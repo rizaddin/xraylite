@@ -22,8 +22,8 @@ echo -e "  ${Blue}[04] ${NC}${GREEN}RESTART SERVICE${NC}    ${Blue}[14] ${NC}${G
 echo -e "  ${Blue}[05] ${NC}${GREEN}CHANGE BANNER${NC}      ${Blue}[15] ${NC}${GREEN}AUTO REBOOT ${NC}"
 echo -e "  ${Blue}[06] ${NC}${GREEN}CHANGE DOMAIN${NC}      ${Blue}[16] ${NC}${GREEN}SCRIPT INFO ${NC}"
 echo -e "  ${Blue}[07] ${NC}${GREEN}FIX POINTING${NC}       ${Blue}[17] ${NC}${GREEN}ADD BOT NOTIF ${NC}"
-echo -e "  ${Blue}[08] ${NC}${GREEN}CLEAR LOGS${NC}"
-echo -e "  ${Blue}[09] ${NC}${GREEN}REBOOT VPS${NC}"
+echo -e "  ${Blue}[08] ${NC}${GREEN}CLEAR LOGS${NC}         ${Blue}[18] ${NC}${GREEN}ADD BOT PANEL (MT) ${NC}"
+echo -e "  ${Blue}[09] ${NC}${GREEN}REBOOT VPS${NC}         ${Blue}[19] ${NC}${GREEN}REGIST IP VPS ${NC}"
 echo -e "  ${Blue}[10] ${NC}${GREEN}GEN-SSL / CERTV${NC}"
 echo -e " \033[36m══════════════════════════════════════════════════════════════════════════${NC}"
 echo -e ""
@@ -81,6 +81,12 @@ case $menu in
    ;;  
 17) clear ;
    add-bot-notif
+   ;;  
+18) clear ;
+   add-bot-panel
+   ;;  
+19) clear ;
+   add-ip
    ;;  
 0) clear ;
    menu
