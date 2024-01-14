@@ -118,6 +118,7 @@ wget -q -O /usr/bin/update "https://raw.githubusercontent.com/rizaddin/xraylite/
 wget -q -O /usr/bin/fixcert "https://raw.githubusercontent.com/rizaddin/xraylite/main/fixcert"
 wget -q -O /usr/bin/installsl "https://raw.githubusercontent.com/rizaddin/xraylite/main/slowdns/installsl.sh"
 wget -q -O /usr/bin/add-bot-notif "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-bot-notif"
+wget -q -O /usr/bin/add-ip "https://raw.githubusercontent.com/rizaddin/xraylite/main/add-ip"
 wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Andyyuda/xolpanel/main/cupu.sh"
 chmod +x /usr/bin/menu-backup
 chmod +x /usr/bin/cekl
@@ -157,6 +158,7 @@ chmod +x /usr/bin/fix
 chmod +x /usr/bin/fixcert
 chmod +x /usr/bin/add-vless
 chmod +x /usr/bin/update
+chmod +x /usr/bin/add-ip
 chmod +x /usr/bin/xolpanel
 clear
 echo -e ""
