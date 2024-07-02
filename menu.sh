@@ -191,7 +191,7 @@ echo -e "${BICyan}┌───────────────────�
 echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp (${NC}${RED} $dayleft Days ${NC}${RED})${NC}"
 echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = JOYS VPN                   ${NC}"
-echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.0 LTS                       ${NC}"
+echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.1 LTS                       ${NC}"
 echo -e "${BICyan}└───────────────────────────────────────────────────────────┘${NC}"
 
 echo
