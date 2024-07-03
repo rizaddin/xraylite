@@ -134,7 +134,16 @@ resv2r="${green}ON${NC}"
 else
 resv2r="${red}OFF${NC}"
 fi
-
+#INFO AKUN
+vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
+let vla=$vlx/2
+vmc=$(grep -c -E "^### " "/etc/xray/config.json")
+let vma=$vmc/2
+ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
+trx=$(grep -c -E "^#! " "/etc/xray/config.json")
+let tra=$trx/2
+ssx=$(grep -c -E "^## " "/etc/xray/config.json")
+let ssa=$ssx/2
 ISPVPS=$( curl -s ipinfo.io/org )
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
@@ -175,7 +184,7 @@ echo -e "${BICyan}┌───────────────────�
 echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp (${NC}${RED} $dayleft Days ${NC}${RED})${NC}"
 echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = JOYS VPN                   ${NC}"
-echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.1 LTS                       ${NC}"
+echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.2 LTS                       ${NC}"
 echo -e "${BICyan}└───────────────────────────────────────────────────────────┘${NC}"
 
 echo
