@@ -65,10 +65,6 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
-
-# // Exporting URL Host
-export MYIP=$( curl -s https://ipinfo.io/ip/ )
-
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
 		echo -e "${EROR} Please Run This Script As Root User !"
@@ -191,7 +187,7 @@ echo -e "${BICyan}┌───────────────────�
 echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp (${NC}${RED} $dayleft Days ${NC}${RED})${NC}"
 echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = JOYS VPN                   ${NC}"
-echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.1 LTS                       ${NC}"
+echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = 5.2 LTS                       ${NC}"
 echo -e "${BICyan}└───────────────────────────────────────────────────────────┘${NC}"
 
 echo
