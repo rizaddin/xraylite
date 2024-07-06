@@ -239,36 +239,6 @@ if [[ "${DATADB}" != '' ]]; then
 fi
 echo "#! ${user} ${exp} ${uuid} " >>/etc/trojan/.trojan.db
 clear
-CHATID="$CHATID"
-KEY="$KEY"
-TIME="$TIME"
-URL="$URL"
-TEXT="<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>      TROJAN ACCOUNT</code>
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>Remarks   : ${user}
-Domain    : ${domain}
-Limit Quota : ${quota} GB
-Port TLS  : 443
-key       : ${uuid}
-Path      : /trojan-ws
-Path WSS  : wss://bugmu.com/trojan-ws
-Service Name      : trojan-grpc</code>
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code> LINK WS </code>
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>${trojanlink}</code>
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>LINK GRPC</code>
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>${trojanlink1}</code>
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-Expired On   : $exp
-<code>◇━━━━━━━━━━━━━━━━━◇</code>
-"
-
-curl -s --max-time $TIME -d "chat_id=$CHATID&text=$TEKS" $URL
-clear
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}            • RENEW TROJAN USER •              ${NC} $COLOR1│$NC"
@@ -337,6 +307,36 @@ sed -i '/#trojangrpc$/a\#! '"$user $exp"'\
 systemctl restart xray
 trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
 trojanlink="trojan://${uuid}@bug.com:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
+CHATID="$CHATID"
+KEY="$KEY"
+TIME="$TIME"
+URL="$URL"
+TEXT="<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>      TROJAN ACCOUNT</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>Remarks   : ${user}
+Domain    : ${domain}
+Limit Quota : ${quota} GB
+Port TLS  : 443
+key       : ${uuid}
+Path      : /trojan-ws
+Path WSS  : wss://bugmu.com/trojan-ws
+Service Name      : trojan-grpc</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code> LINK WS </code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>${trojanlink}</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>LINK GRPC</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>${trojanlink1}</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+Expired On   : $exp
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&text=$TEKS" $URL
+clear
+
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}           • CREATE TROJAN USER •              ${NC} $COLOR1│$NC"
