@@ -267,7 +267,7 @@ Expired On   : $exp
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 "
 
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+curl -s --max-time $TIME -d "chat_id=$CHATID&text=$TEKS" $URL
 clear
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
